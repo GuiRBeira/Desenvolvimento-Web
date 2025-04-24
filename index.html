@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="'pt-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8"/>
     <meta NAME="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>O Reino do Xadrez</title>
     <link rel="stylesheet" href="style.css"/>   
 </head>
+<script src="script.js"></script>
 <body>
     <header>    
         <h2>O Reino do Xadrez</h2>
@@ -20,23 +21,42 @@
     <h2>Boas-vindas ao Reino do Xadrez</h2>
     <p>No coração de um tabuleiro quadriculado, dois exércitos se enfrentam em silêncio. Neste reino, estratégia é
         poder, e cada movimento pode mudar o destino da batalha.</p>
-</section id="pecas">
+</section>
+
+<section id="pecas">
 <h2>Conheça as Peças</h2>
 <div class="pieces">
     <div class="piece">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="Peão">
+        <img src="images/pawn.png" alt="Peão">
         <h3>Peão</h3>
         <p>O mais numeroso, avança devagar mas pode se tornar qualquer peça.</p>
     </div>
     <div class="piece">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_rlt45.svg" alt="Torre">
+        <img src="images/rook.png" alt="Torre">
         <h3>Torre</h3>
         <p>Forte e direta, domina linhas e colunas.</p>
     </div>
     <div class="piece">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Chess_nlt45.svg" alt="Cavalo">
+        <img src="images/horse.png" alt="Cavalo">
         <h3>Cavalo</h3>
         <p>Salta por sobre outras peças, movimentando-se em L.</p>
+    </div>
+</div>
+<div class="pieces">
+    <div class="piece">
+        <img src="images/bispo.png" alt="Cavalo">
+        <h3>Bispo</h3>
+        <p>Controla as diagonais</p>
+    </div>
+    <div class="piece">
+        <img src="images/queen.png" alt="Rainha">
+        <h3>Rainha</h3>
+        <p>Peça mais poderosa: move-se em qualquer direção.</p>
+    </div>
+    <div class="piece">
+        <img src="images/king.png" alt="Rei">
+        <h3>Rei</h3>
+        <p>A peça mais importante deve ser protegido a todo custo.</p>
     </div>
 </div>
 </section>
@@ -51,6 +71,9 @@
         <li>Pense antes de cada movimento: qual a ameaça e qual a resposta?</li>
     </ul>
 </section>
+
+<button id="voltarTopo">↑ Topo</button>
+<button id="mudarTema" onclick="trocarTema()">Mudar tema</button>
 
 <footer>
     <p>© 2025 O Reino do Xadrez. Todos os direitos reservados.</p>

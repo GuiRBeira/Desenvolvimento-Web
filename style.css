@@ -1,27 +1,50 @@
+/* ==================== TEMA PADRÃO (ESCURO) ==================== */
 body {
-    margin: 0;
-    font-family: 'Georgia', serif;
-    background-image: url('3607424.jpg');
-    background-size: cover;
+    background-color: #000000;
+    background-image: url("background-darkmode.jpg");
+           background-size: cover;
     background-position: center;
     color: #f0f0f0;
-    line-height: 1.6;
+    transition: all 0.4s ease;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #111;
+/* ==================== TEMA CLARO ==================== */
+body.tema-escuro {
+    background-color: #f4f6ce;
+    background-image: url("background-lightmode.png");
+    color: #111;
+}
+
+body.tema-escuro header,
+body.tema-escuro nav,
+body.tema-escuro section,
+body.tema-escuro footer {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* ==================== ESTRUTURA GERAL ==================== */
+header, nav, section, footer {
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* HEADER */
+header {
     text-align: center;
 }
 
-header h1 {
+header h1,
+header h2 {
     font-size: 2.5em;
     color: #e0c068;
 }
 
+/* NAVEGAÇÃO */
 nav {
     background-color: #333;
-    padding: 10px;
     text-align: center;
 }
 
@@ -32,14 +55,23 @@ nav a {
     font-weight: bold;
 }
 
+/* SEÇÕES */
 section {
     padding: 40px 20px;
     max-width: 900px;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
 }
 
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ==================== CONTEÚDO DE PEÇAS ==================== */
 .pieces {
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +81,7 @@ section {
 }
 
 .piece {
-    background-color: rgba(0.2, 0.2, 0.2, 0.4);
+    background-color: rgba(32, 32, 32, 0.4);
     padding: 20px;
     border-radius: 8px;
     width: 200px;
@@ -61,15 +93,28 @@ section {
     margin-bottom: 15px;
 }
 
+/* ==================== LISTAS ==================== */
 ul {
     list-style-type: square;
     padding-left: 20px;
 }
 
-footer {
-    background-color: #111;
-    color: #ccc;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+/* ==================== BOTÕES ==================== */
+button {
+    padding: 10px 14px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ff0055;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 0, 85, 0.5);
+    transition: 0.3s ease;
 }
+
+button:hover {
+    background-color: #cc0044;
+}
+
+/* BOT*
