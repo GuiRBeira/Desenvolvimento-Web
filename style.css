@@ -1,8 +1,8 @@
 /* ==================== TEMA PADRÃO (ESCURO) ==================== */
 body {
     background-color: #000000;
-    background-image: url("background-darkmode.jpg");
-           background-size: cover;
+    background-image: url("images/background-darkmode.jpg");
+    background-size: cover;
     background-position: center;
     color: #f0f0f0;
     transition: all 0.4s ease;
@@ -10,16 +10,16 @@ body {
 }
 
 /* ==================== TEMA CLARO ==================== */
-body.tema-escuro {
+body.tema-claro {
     background-color: #f4f6ce;
-    background-image: url("background-lightmode.png");
+    background-image: url("images/background-lightmode.png");
     color: #111;
 }
 
-body.tema-escuro header,
-body.tema-escuro nav,
-body.tema-escuro section,
-body.tema-escuro footer {
+body.tema-claro header,
+body.tema-claro nav,
+body.tema-claro section,
+body.tema-claro footer {
     background-color: rgba(255, 255, 255, 0.7);
 }
 

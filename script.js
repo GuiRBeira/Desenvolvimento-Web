@@ -5,6 +5,5 @@ document.getElementById("voltarTopo").addEventListener("click", function () {
 
 // Mudar tema
 function trocarTema() {
-    document.body.classList.toggle("tema-escuro");
+    document.body.classList.toggle("tema-claro");
 }
-
